@@ -1,0 +1,226 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D9D9D9; 
+    color: #333;
+}
+
+/* CONTAINER & SIDEBAR */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    height: 100vh; 
+    width: 250px; 
+    padding: 0; 
+    background-color: #8DC2C4; 
+    position: sticky;
+    top: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s;
+}
+
+/* Logo GHCV */
+.logo {
+    list-style: none;
+    color: #4363CD;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    font-family: "Moo Lah Lah", sans-serif;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Các Mục menu (li) */
+.sidebar li {
+    margin-bottom: 5px; 
+    background-color: #A8EFF2;
+    border-top: 1px solid #ddd; 
+}
+.sidebar ul li:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.sidebar li a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    font-size: 15px;
+}
+
+.sidebar li a:hover {
+    background-color: #ccffcc;
+    font-weight: bold;
+}
+
+/* Tiêu đề nhóm (Tim CV & Công cụ hỗ trợ) */
+.section-title {
+    background-color: #1ED9EE !important; 
+    color: black!important; 
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 20px;
+    border: none !important;
+}
+
+/* --- NỘI DUNG CHÍNH (CONTENT) --- */
+.content {
+    flex-grow: 1; 
+    padding: 20px 30px; 
+}
+
+/* --- HEADER TRANG CHI TIẾT --- */
+.job-detail-header-in-content {
+    margin-bottom: 20px;
+}
+.main-heading {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.company-name-detail {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+
+/* Định dạng nội dung chi tiết */
+.detail-section {
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.section-heading i {
+    color: #8DC2C4;
+    margin-right: 8px;
+}
+
+.detail-section ul {
+    list-style: none;
+    padding-left: 0; 
+}
+
+.detail-section p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.detail-section li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    padding-left: 0;
+    margin-bottom: 8px;
+
+}
+
+/* Hình ảnh */
+.detail-image-box {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.job-illustration {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px; 
+    object-fit: cover;
+}
+
+/* Nút Ứng tuyển */
+.application-section {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.apply-button {
+    width: 300px; 
+    padding: 12px;
+    background-color: #4363CD; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.apply-button:hover {
+    background-color: #2e4baa;
+}
+.site-footer {
+    width: 100%;
+    background-color: #CAE8E8; 
+    color: black;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #D95380; 
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.contact-link {
+    color: red; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+.copyright {
+    margin-top: 20px !important;
+    padding-top: 10px;
+}
